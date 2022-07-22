@@ -127,6 +127,10 @@ spec:
             value: quay.io/openshift/origin-ibm-vpc-block-csi-driver:latest
           - name: IBM_VPC_NODE_LABEL_UPDATER_IMAGE
             value: quay.io/openshift/origin-ibm-vpc-node-label-updater:latest
+          - name: NUTANIX_DRIVER_OPERATOR_IMAGE
+            value: public.ecr.aws/g7v6l0u0/openshift/nutanix-csi-driver-operator:latest
+          - name: NUTANIX_DRIVER_IMAGE
+            value: public.ecr.aws/g7v6l0u0/openshift/nutanix-csi-driver:latest
           resources:
             requests:
               cpu: 10m
