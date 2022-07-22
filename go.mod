@@ -109,3 +109,5 @@ require (
 )
 
 replace k8s.io/client-go => k8s.io/client-go v0.24.0
+
+replace github.com/openshift/api => github.com/nutanix-cloud-native/openshift-api v0.0.0-20220721163053-1ded2573fbbe
