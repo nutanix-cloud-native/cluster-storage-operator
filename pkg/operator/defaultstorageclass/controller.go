@@ -202,6 +202,8 @@ func newStorageClassForCluster(infrastructure *configv1.Infrastructure) (*storag
 		return nil, supportedByCSIError
 	case configv1.OvirtPlatformType:
 		return nil, supportedByCSIError
+	case configv1.NutanixPlatformType:
+		storageClassFile = "storageclasses/nutanix.yaml"
 	default:
 		return nil, unsupportedPlatformError
 	}
